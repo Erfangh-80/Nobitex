@@ -1,0 +1,1864 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*** start all style tag ***/
+
+:root {
+  --white: #ffffff;
+  --primary: #784ed1;
+  --hover-primary: #5e35b1;
+  --secondary: #15d1c6;
+  --warning: #fb3;
+  --success: #00aea4;
+  --danger: #f26672;
+  --info: #2d80da;
+  --light: #f2f3f5;
+  --default: #a3a5a8;
+  --dark: #1e2026;
+  --border: #4c505b;
+  --text-primary: #14151a;
+  --text-secondary: #a3a5a8;
+}
+
+
+body{
+  font-family: vazir;
+  background-color: var(--light);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*** end all style tag ***/
+
+/*** start style nav ***/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 4.5rem;
+  background-color: rgba(20,21,26,1);
+}
+
+
+
+
+header .hamburger-icon{
+  color: var(--white);
+  font-size: 1.6rem;
+  display: none;
+}
+
+header .hamburger-menu{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(20,21,26,1);
+  width: 300px;
+  height: 100%;
+  overflow: scroll;
+  display: none;
+  scrollbar-width: thin;
+  z-index: 10;
+}
+
+header .hamburger-menu .auth{
+  display: flex;
+  flex-direction: column;
+}
+
+header .hamburger-menu .auth i{
+  color: var(--white);
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 1.2rem;
+  cursor: pointer;
+}
+
+header .hamburger-menu .auth a{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  border: 1px solid var(--primary) ;
+  border-radius: 5px;
+  padding: 0.4rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: .9rem;
+  transition: all .25s ease;
+}
+
+header .hamburger-menu .auth .login:hover{
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+header .hamburger-menu .auth .register{
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+header .hamburger-menu .auth .register:hover{
+  background-color: var(--hover-primary);
+}
+
+header .hamburger-menu .items {
+  margin-top: .6rem;
+}
+
+header .hamburger-menu .items .list-item li{
+  border-top: 1px solid var(--border);
+  margin-left: .5rem;
+  transition: all .5s ease;
+  width: 100%;
+}
+
+header .hamburger-menu .items .list-item li a{
+  transition: all .5s ease;
+  color: #e3e4e5;
+  font-size: .9rem;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+}
+
+header .hamburger-menu .items .list-item li:hover a {
+  color: var(--secondary);
+}
+
+
+header .hamburger-menu .items .list-item li a img{
+  margin-left: 1rem;
+}
+
+header .hamburger-menu .items .list-item .cripto i{
+  margin: 3px;
+}
+
+header .hamburger-menu .items .list-item .cripto-menu{
+  display: none;
+  background-color: var(--dark);
+}
+
+header .hamburger-menu .items .list-item .cripto-menu li{
+  border: none;  
+}
+
+header .hamburger-menu .items .list-item .cripto-menu li:hover{
+  background-color: #292c34;
+}
+
+header .hamburger-menu .items .list-item .cripto-menu li:last-child{
+  border-top: 1px solid var(--border) ;
+}
+
+header .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  width: 124px;
+}
+
+header .logo img{
+  width: 45px;
+}
+
+header .logo p{
+  color: var(--white);
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+nav .navbar{
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+nav .navbar ul{
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav .navbar .list-item li{
+  padding: 1rem;
+}
+
+nav .navbar .list-item li a{
+  transition: all .35s ease;
+}
+
+nav .navbar .list-item li:first-child{
+  position: relative;
+}
+
+nav .navbar .list-item li .cripto-menu{
+  display: none;
+}
+
+nav .navbar .list-item li .cripto-menu{
+  margin-top: 10px;
+  margin-right: 15px;
+  border-radius: 5px;
+  width: 160px;
+  position: absolute;
+  background-color: var(--dark);
+}
+
+nav .navbar .list-item li .cripto-menu a:last-child{
+  border-top: 1px solid var(--border);
+}
+
+nav .navbar .list-item li .cripto-menu a{
+  display: block;
+  padding: .8rem 10px;
+}
+
+nav .navbar .list-item li .cripto-menu a:hover{
+  background-color: #292c34;
+}
+
+nav .navbar .list-item a:hover {
+  color: var(--secondary);
+}
+
+nav .navbar .list-item li a{
+  color: var(--white);
+  padding: .5rem;
+}
+
+nav .navbar .list-item li .fa-angle-down{
+  color: var(--white);
+}
+
+header .authentication{
+  width: 184px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+header .authentication a{
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+header .authentication a:last-child{
+  background-color: var(--primary);
+  margin-right: 0.9rem;
+  padding: 0.4rem 1.5rem;
+  border-radius: 3px;
+}
+/*** end style nav ***/
+
+/*** start style banner ***/
+.header {
+  width: 100%;
+  height: 1000px;
+  background: url("../images/jumbotron.7888412.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section .heading{
+  margin-top: 4.5rem;
+  font-size: 1.65rem;
+  font-weight: bold;
+  color:#14151a;
+  line-height: 1.5;
+}
+
+
+section div h3{
+  font-weight: 400 !important;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+section .sendEmail{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+section .sendEmail .emailInput{
+  border: none;
+  width: 45%;
+  padding: 0 1rem;
+  border-radius: 2px;
+}
+
+section .sendEmail .btn-start{
+  background-color: var(--success);
+  font-size: 1rem;
+  padding: .5rem 1.5rem;
+  border-radius: 2px;
+  color: var(--white);
+  font-weight: 400;
+  cursor: pointer;
+  transition: all .10s ease;
+}
+
+section .sendEmail .emailInput::placeholder{
+  font-size: medium;
+  font-weight: 500;
+  font-family: vazir;
+}
+
+section .sendEmail .btn-start:hover{
+  background-color: #109a91 ;
+}
+
+section .aparat {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  color: var(--primary); 
+}
+
+section .aparat a{
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: 500;
+  color: var(--primary) ;
+}
+
+section .aparat img{
+  margin-right: 1rem;
+}
+/*** end style banner ***/
+
+/* *** start style section market *** */
+
+#market{
+  width: 100%;
+  position: relative;
+  margin-top: -19.5rem;
+}
+
+
+#market .market-header .select-market{
+  display: flex;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 400px;
+  border-radius: .7rem;
+  background-color: var(--white);
+}
+
+#market .market-header span{
+  color: var(--text-primary);
+  font-size: .9rem;
+  text-align: right;
+}
+
+#market .market-header .filter{
+  margin-right: 2rem;
+}
+
+#market .market-header .filter a:first-child{
+  background-color: #e3e4e5;
+  padding: .4rem 1rem;
+  border-top-right-radius: .2rem;
+  border-bottom-right-radius: .2rem;
+  color: var(--default);
+}
+
+#market .market-header .filter a:last-child{
+  background-color: #85888f;
+  padding: .4rem 1rem;
+  border-top-left-radius: .2rem;
+  border-bottom-left-radius: .2rem;
+  margin-right: -5px;
+  color: var(--white);
+}
+
+
+#market .market-body .head{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white);
+  margin: -.6rem 1rem .3rem 1rem;
+  padding: 1rem;
+  border-top-left-radius:  .6rem;
+  font-size: .75rem;
+  color: var(--text-secondary);
+}
+
+#market .market-body .head .name{
+  margin-right: -4rem;
+}
+
+#market .market-body .head .last-price{
+  margin-right: 8rem;
+}
+
+#market .market-body .head .last-change{
+  margin-right: -6rem;
+}
+
+#market .market-body .head .chart{
+  margin-left: 5rem;
+}
+
+#market .market-body .curency-market{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  margin: -.6rem 1rem 0 1rem;
+  padding: .6rem;
+  border-top: 1px solid var(--border);
+}
+
+#market .market-body .curency-market .more{
+  display: none;
+}
+
+#market .market-body .curency-market .name-column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+#market .market-body .curency-market .name-column img{
+  width: 2.2rem;
+}
+
+#market .market-body .curency-market .name-column div{
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+#market .market-body .curency-market .name-column div span:first-child{
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+
+#market .market-body .curency-market .name-column div span:last-child{
+  font-size: .9rem;
+  color: #afa99e;
+}
+
+#market .market-body .curency-market .price-column{
+  font-size: 1rem;
+}
+
+#market .market-body .curency-market .change-column{
+  margin-right: -5rem;
+  color: #f26672;
+  background-color:rgb(62, 0, 7);
+  border-radius: .3rem;
+}
+
+#market .market-body .curency-market .chart-column img{
+  width: 8rem;
+  margin-right: -1rem;
+}
+
+#market .market-body .curency-market .buySell-column {
+  margin-left: 1rem;
+}
+
+#market .market-body .curency-market .buySell-column .btn-buySell{
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  padding: .3rem 2rem;
+  transition: all .15s ease;
+  color: var(--secondary);
+}
+
+#market .market-body .curency-market .buySell-column .btn-buySell:hover{
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+#market .market-body .all-cripto{
+  width: 100%;
+  background-color: var(--light);
+}
+
+#market .market-body .all-cripto div{
+  margin: 0 1rem;
+  background-color: var(--white);
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#market .market-body .all-cripto div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#market .market-body .all-cripto div a span{
+  color: var(--primary);
+  font-size: .9rem;
+}
+
+#market .market-body .all-cripto div a i{
+  color: var(--light);
+  margin-right: 1rem;
+}
+
+/* *** end style section market *** */
+
+
+/* ******** start style section slider ******** */
+
+#slider{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0px 1rem;
+}
+
+#slider .cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 2rem 3rem 4rem ;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#slider .cards .card{
+  width: 100%;
+  padding: 0.5rem 2rem;
+}
+
+#slider .cards .card img{
+  transition: all 1s ease;
+  width: 21rem;
+  border-radius: 1rem;
+}
+
+#slider .arrow{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+#slider .arrow i{
+  color: var(--default);
+  font-size: 2rem;
+}
+
+#slider .arrow .arrow-right,.arrow-left{
+  margin: 0px .5rem;
+  border: 1px solid var(--text-secondary);
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+/* ******** end style section slider ******** */
+
+
+/* ******** start style section selected nobitex ******** */
+
+#select-nobitex{
+  width: 100%;
+  background-color: var(--white);
+  padding-bottom: 1rem;
+}
+
+#select-nobitex .title{
+  padding-top: 4rem;
+  text-align: center;
+  font-size: large;
+}
+
+ #select-nobitex .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+#select-nobitex .container .post h4{
+  margin-top: 1.5rem;
+}
+#select-nobitex .container .post p{
+  margin: 0.5rem auto 0px auto;
+  color: var(--border);
+  width: 70%;
+  font-size: 0.9rem;
+}
+
+/* ******** start style section selected nobitex ******** */
+
+#facilities{
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+#facilities .title{
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 5.2rem 0px 3rem 0px;
+  font-size: 1.2rem;
+}
+
+#facilities .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#facilities .container .right-content{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#facilities .container .right-content .content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+#facilities .container .right-content .content .image-content{
+  background-color: var(--white);
+  padding: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+}
+
+#facilities .container .right-content .content .description{
+  margin-right: 1.2rem;
+}
+
+#facilities .container .right-content .content .description h4{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+
+#facilities .container .right-content .content .description p{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  width: 83%;
+}
+
+#facilities .container .left-content{
+  width: 50%;
+}
+
+#facilities .container .left-content .background-content{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#facilities .container .left-content .background-content img{
+  width: 100%;
+  margin-left: 1rem;
+}
+
+/* ******** end style section selected nobitex ******** */
+
+
+/* ******** start style section statistics  ******** */
+
+#statistics {
+  width: 100%;
+}
+
+#statistics .container{
+  background-color: var(--border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+}
+
+#statistics .container .active-user h4{
+  font-size: 2.6rem;
+  color: var(--white);
+}
+
+#statistics .container .active-user h4 span{
+  color: #d3bdff;
+}
+
+#statistics .container .active-user p{
+  font-size: 0.9rem;
+  color: var(--white);
+  text-align: center;
+}
+
+#statistics .container .transactions-made h4{
+  font-size: 2.6rem;
+  color: var(--white);
+}
+
+
+#statistics .container .transactions-made h4 span{
+  color: #d3bdff;
+}
+
+#statistics .container .transactions-made p{
+  font-size: 0.9rem;
+  color: var(--white);
+  text-align: center;
+}
+
+#statistics .container .transaction-volume h4{
+  font-size: 2.6rem;
+  color: var(--white);
+}
+
+#statistics .container .transaction-volume p{
+  font-size: 0.9rem;
+  color: var(--white);
+  text-align: center;
+}
+
+#statistics .container .transaction-volume h4 span{
+  color: #d3bdff;
+}
+
+/* ******** end style section statistics  ******** */
+
+/* ******** start style section learn-More ******** */
+
+#learn-More{
+  width: 100%;
+  background-color: var(--white);
+}
+
+#learn-More .title{
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+#learn-More .container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding-bottom: 4.5rem;
+}
+
+#learn-More .container .learn{
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+#learn-More .container .learn:hover{
+  color: var(--hover-primary);
+}
+
+#learn-More .container .learn div{
+  width: 110px;
+  height: 110px;
+  margin: auto;
+  border: 12px solid var(--light);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.35s ease;
+}
+
+#learn-More .container .learn div:hover{
+  border: 7px solid var(--hover-primary);
+}
+
+#learn-More .container .learn div img{
+  width: 30px;
+  height: 30px;
+}
+
+#learn-More .container .learn p{
+  text-align: center;
+  padding-top: 1.5rem;
+  width: 100%;
+}
+
+/* ******** end style section learn-More ******** */
+
+/* ******** start style section profit ******** */
+
+#profit{
+  width: 100%;
+}
+
+#profit .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#profit .container .content{
+  width: 50%;
+  margin-right: 1rem;
+}
+
+#profit .container .content h1{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+#profit .container .content p{
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 1.2rem 0px 2rem 0px;
+}
+
+#profit .container .content a{
+  background-color: var(--primary);
+  padding: .5rem 1.5rem;
+  border-radius: 24px;
+  color: var(--white);
+  font-size: 0.9rem;
+  
+}
+
+#profit .container .image-content{
+  width: 50%;
+  text-align: center;
+}
+
+#profit .container .image-content img{
+  width: 580px;
+  margin-top: -50px;
+}
+/* ******** end style section profit ******** */
+
+
+/* ******** start style section support ******** */
+
+#support{
+  width: 100%;
+}
+
+#support .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--border);
+}
+
+#support .container .text-support{
+  color: var(--white);
+  padding: 1.9rem;
+  font-size: 1.3rem;
+  width: 50%;
+}
+
+#support .container .contact-nobitext{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  margin-left: 1rem;
+  color: var(--white);
+}
+
+
+#support .container .contact-nobitext p{
+  padding: 1.5rem;
+}
+
+#support .container .contact-nobitext .first{
+  background-color: var(--white);
+  border: 1px solid var(--success);
+  color: var(--success);
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+  margin-left: 0.5rem
+}
+
+#support .container .contact-nobitext .last{
+  background-color: var(--success);
+  border: 1px solid var(--success);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+  margin-left: 1rem;
+}
+/* ******** end style section support ******** */
+
+/* ******** start style section footer ******** */
+
+#footer{
+  width: 100%;
+  background-color: var(--text-primary);
+}
+
+#footer .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem 1.8rem;
+}
+
+#footer .container .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .container .logo p{
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-right: 1rem;
+  color: #fff;
+}
+
+#footer .container .speed-link h3{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+#footer .container .speed-link .list-items {
+  margin-top: 1.5rem;
+}
+
+#footer .container .speed-link .list-items .item{
+  margin: .5rem;
+}
+
+#footer .container .speed-link .list-items .item a{
+  color: #afa99e;
+  font-size: 0.9rem;
+}
+
+#footer .container .speed-link .arrow{
+  display: none;
+  color: #fff;
+}
+
+#footer .download-app {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+#footer .download-app .text-app{
+  font-size: 0.9rem;
+  margin-right: 1.2rem;
+  color: #fff;
+}
+
+#footer .download-app .image-download {
+  margin-left: 1rem;
+}
+
+#footer .download-app .image-download .download{
+  padding: 0px 0.5rem;
+}
+
+#footer .download-app .image-download .bazar,.myket{
+  background-color: #000;
+  border-radius: 5px;
+}
+
+#footer .follow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0px;
+  border-top: 1px solid var(--border);
+}
+
+#footer .follow .follower {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+#footer .follow .follower .twitter,.linkedin,.telegram,.instagram{
+  margin-right: 2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--border);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+#footer .follow .follower .twitter:hover{
+  background-color: transparent;
+  outline: 3px solid var(--border);
+}
+
+#footer .follow .follower .linkedin:hover{
+  background-color: transparent;
+  outline: 3px solid var(--border);
+}
+
+#footer .follow .follower .telegram:hover{
+  background-color: transparent;
+  outline: 1px solid var(--border);
+}
+
+#footer .follow .follower .instagram:hover{
+  background-color: transparent;
+  outline: 3px solid var(--border);
+}
+
+#footer .follow .copy-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  margin-left: 2rem;
+}
+
+#footer .follow .copy-right .btn-language{
+  display: flex;
+  align-items: center;
+  color: var(--default);
+}
+
+#footer .follow .copy-right .copy-text{
+  margin-left: 1rem;
+  order: -1;
+}
+
+#footer .follow .copy-right .text{
+  font-size: 0.7rem;
+}
+
+#footer .follow .copy-right .btn-language button{
+  padding: 0.3rem 1.5rem;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border-radius: 5px;
+  border-color: #494f52;
+  color: #fff;
+}
+
+#footer .follow .copy-right .btn-language .logo{
+  display: none;
+}
+
+/* ******** end style section footer ******** */
+
+/*********** start responsive webSite  ***********/
+@media (max-width: 1200px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: .8rem 1.5rem;
+  }
+
+  header .hamburger-icon{
+    display: flex;
+    cursor: pointer;
+  }
+
+  header .navbar{
+    display: none;
+  }
+
+  header .logo{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .logo img{
+    width: 2rem;
+  }
+
+  header .authentication{
+    width: 150px;
+    padding: 0 6px;
+    text-align: left;
+  }
+  
+  header .authentication a{
+    font-size: .7rem;
+    padding: .1875rem 1rem .125rem;
+  }
+
+  header .authentication a:last-child{
+    padding: .2rem 1.2rem;
+    margin-right: .5rem;
+    margin-left: 0;
+  }
+
+
+  .header{
+    background: none ;
+  }
+
+  .header .content {
+    background: url("../images/jumbotron.7888412.svg"); 
+    height: 60vh;
+    width: 800px;
+    background-size: cover;
+  }
+  
+  .header .heading h1{
+    font-size: 1.7rem;
+    padding: 0 .5rem;
+    text-align: center;
+  }
+  
+  .header .heading h3{
+    font-size: 1.18rem;
+    margin-top: .5rem;
+  }
+  
+  .header .sendEmail {
+    margin-top: 1rem;
+  }
+
+  .header .content .sendEmail .emailInput,.btn-start{
+    margin-top: .5rem;
+  }
+
+  .header .sendEmail .emailInput{
+    border:1px solid var(--white);
+    width: 29%;
+  }
+
+  .header  .aparat a{
+    font-size: .9rem;
+  }
+
+  .header  .aparat img{
+    width: 1.3rem;
+  }
+  
+  #market{
+    width: 90%;
+    margin: -35.5rem auto 0 auto;
+    z-index: 1 ;
+  }
+
+  #market .market-body .head .name{
+    margin-right: -2rem;
+  }
+
+  #market .market-body .head .last-change{
+    margin-right: 1rem;
+  }
+
+  #market .market-body .curency-market .price-column{
+    margin: 0;
+    font-size: .9rem;
+  }
+
+  #market .market-body .curency-market .change-column{
+    margin: 0px;
+    font-size: .8rem;
+  }
+
+  #market .market-body .curency-market .chart-column{
+    margin: 0;
+  } 
+
+  #market .market-body .curency-market .chart-column img{
+    width: 6rem;
+  }
+
+  #market .market-body .curency-market .buySell-column{
+    margin: 0px;
+  }
+  
+  #market .market-body .curency-market .buySell-column .btn-buySell{
+    padding: .3rem 1rem;
+  }
+
+  #slider .cards{
+    width: 90%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #slider .cards .card{
+    margin: 2rem;
+  }
+
+  #slider .cards .card img {
+    width: 13rem;
+  }
+
+  #select-nobitex .title{
+    font-size: 0.7rem;
+    padding-top: 2rem;
+  }
+  
+  #select-nobitex .container .post:first-child img{
+    width: 140px;
+  }
+  
+  #select-nobitex .container .post:nth-child(2) img{
+    width: 90px;
+  }
+  
+  #select-nobitex .container .post:last-child img{
+    width: 120px;
+  }
+  
+  #select-nobitex .container .post h4{
+    font-size: 0.9rem;
+  }
+
+  #select-nobitex .container .post p{
+    font-size: 0.7rem;
+  }
+
+  /* style section facilities */
+
+  #facilities .title h1{
+    font-size: 1.1rem;
+  }
+  
+  #facilities .container .right-content{
+    padding: 2rem;
+  }
+
+  #facilities .container .right-content .content .description h4{
+    font-size: 0.9rem;
+  }
+
+  #facilities .container .right-content .content .description p{
+    font-size: 0.7rem;
+    line-height: 2;
+  }
+
+  #facilities .container .left-content .background-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #facilities .container .left-content .background-content img{
+    width: 65%;
+    justify-content: center;
+  }
+
+  /* style section statistics */
+    
+  
+  #statistics .container .active-user h4{
+    font-size: 2.2rem;
+  }
+  
+  #statistics .container .active-user p{
+    font-size: 0.7rem;
+  }
+  
+  #statistics .container .transactions-made h4{
+    font-size: 2.2rem;
+  }
+  
+  #statistics .container .transactions-made p{
+    font-size: 0.7rem;
+  }
+  
+  #statistics .container .transaction-volume h4{
+    font-size: 2.2rem;
+  }
+  
+  #statistics .container .transaction-volume p{
+    font-size: 0.7rem;
+  }
+
+  /* style section learn */
+
+  #learn-More .title{
+    font-size: 1.1rem;
+  }
+
+  #learn-More .container .learn{
+    font-size: 0.9rem;
+  }
+
+  /* style section profit */
+
+  #profit .container .content{
+    margin-right: 4rem;
+    margin-top: -1.5rem;
+  }
+
+  #profit .container .content h1{
+    font-size: 1.1rem;
+  }
+
+  #profit .container .content p{
+    font-size: 0.7rem;
+  }
+
+  #profit .container .image-content img{
+    width: 450px;
+    margin: -60px 0px 0px 1.5rem;
+  }
+
+  /* style section support */
+
+  #support .container .text-support{
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  #support .container .contact-nobitext p{
+    font-size: 1.1rem;
+  }
+
+  #support .container .contact-nobitext a{
+    font-size: 0.7rem;
+    padding: 0.1rem 1rem !important;
+  }
+
+  /* style section footer */
+
+  #footer .container .logo{
+    display: none;
+  }
+
+  #footer .download-app  {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #footer .download-app .text-app{
+    font-size: 0.9rem;
+  }
+
+  #footer .download-app .image-download{
+    margin-top: 2rem;
+  }
+
+  #footer .follow {
+    flex-direction: column;
+  }
+
+  #footer .follow .follower{
+    width: 100%;
+    justify-content: center;
+  }
+
+  #footer .follow .follower .twitter,.linkedin,.telegram,.instagram{
+    width: 35px;
+    height: 35px;
+    color: var(--white);
+  }
+
+  #footer .follow .copy-right{
+    justify-content: center;
+    margin-top: 1.5rem;
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  #footer .follow .copy-right .copy-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    color: var(--default);
+    order: 1;
+    
+  }
+
+  #footer .follow .copy-right .btn-language{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  #footer .follow .copy-right .btn-language .language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  #footer .follow .copy-right .btn-language button{
+    font-size: 0.9rem;
+  }
+
+  #footer .follow .copy-right .btn-language .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+
+  #footer .follow .copy-right .btn-language .logo p{
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
+  #footer .follow .copy-right .btn-language .logo img{
+    width: 30px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  #facilities .container .right-content{
+    padding: 0px;
+  }
+
+  #facilities .container .right-content .content .description p{
+    width: 100%;
+  }
+
+  #statistics .container {
+    justify-content: space-between;
+  }
+
+  /* style section profit */
+
+  #profit .container .content {
+    margin-right: 2rem;
+  }
+
+  #profit .container .image-content img{
+    width: 100%;
+  }
+
+  /* style section support */
+
+  #support .container {
+    flex-direction: column;
+    padding: 0px 0px 2rem 0px;
+  }
+
+  #support .container .text-support{
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  #support .container .contact-nobitext{
+    width: 100%;
+    justify-content: center;
+  }
+
+  #support .container .contact-nobitext p{
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px){
+  
+  header {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  header .logo p{
+    font-size: 0.9rem;
+  }
+  
+  header .authentication{
+    width: 135px;
+  }
+
+  header .authentication a:first-child{
+    padding: 0 .5rem;
+  }
+
+  /* section header */
+
+  .header{
+    background-color: #f2f3f5 !important;
+  }
+
+  .header .content{
+    background: none;
+    display: block;
+  }
+
+  .header .heading {
+    margin-top: 2rem;
+  }
+
+  .header .heading h1{
+    font-size: 1.290rem;
+  }
+
+  .header .heading h3{
+    font-size: .9rem;
+  }
+
+  .header .content .sendEmail{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header .content .sendEmail .emailInput{
+    margin: auto;
+    background-color: #fff ;
+    padding: .5rem;
+    width: 50%;
+    box-shadow: 1px 1px 1px 1px rgb(191, 182, 182);
+  }
+  
+  .header .content .sendEmail .btn-start{
+    width: 50%;
+    margin: auto;
+    margin-top: .5rem;
+  }
+
+  .header .content .sendEmail .btn-start::before{
+    content: "همین حالا ";
+  }
+
+  .header .content .aparat{
+    background: url("../images/jumbotron.7888412.svg");
+    margin: 1rem auto;
+    width: 50%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header .content .aparat a{
+    align-items: flex-start;
+    margin-top: .2rem;
+  }
+
+  /* section market */
+  #market {
+    background-color: var(--white);
+    width: 100%;
+    border-top: 1px solid var(--border);
+  }
+
+  #market .market-header .select-market{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #market .market-header .select-market span{
+    font-size: .8rem;
+  }
+
+  #market .market-header .select-market .filter{
+    margin: 0px 0px 0px 1rem;
+  }
+
+  #market .market-header .select-market .filter a{
+    padding: .2rem 1.5rem;
+    font-size: .6rem;
+    border: 1px solid var(--border);
+  }
+
+  #market .market-body{
+    width: 100%;
+  }
+
+  #market .market-body .head .chart{
+    display: none;
+  }
+
+  #market .market-body .curency-market{
+    justify-content: space-between;
+  }
+
+  #market .market-body .curency-market .chart-column{
+    display: none;
+  }
+
+  #market .market-body .curency-market .buySell-column{
+    display: none;
+  }
+
+  #market .market-body .curency-market .more{
+    display: flex;
+    cursor: pointer;
+    position: relative; 
+    border-radius: 5px;
+  }
+
+  #market .market-body  .more .dropDown {
+    display: none;
+  }
+  
+  #market .market-body .curency-market .dropDown{
+    border: 1px solid var(--border);
+    width: 100px;
+    position: absolute;
+    font-size: .7rem;
+    left: 1.5rem;
+    top: -10px;
+    color: var(--primary);
+    padding: .5rem 0px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--white);
+  }
+
+  #market .market-body .curency-market .more span{
+    transform: rotate(90deg);
+  }
+
+  #market .market-body .curency-market .dropDown div{
+    padding: 5px;
+  }
+
+  #market .market-body .curency-market .dropDown .buySell{
+    border-top: 1px solid var(--border);
+  }
+  
+  #market .market-body .all-cripto div{
+    margin: 0px 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* section slider */
+
+  #slider .cards {
+    overflow-x: scroll;
+    scrollbar-width: thin;
+  }
+
+  #slider .arrow{
+    display: none;
+  }
+
+  /* section selected nobitex */
+  
+  #select-nobitex .container .post:first-child img{
+    width: 100px;
+  }
+  
+  #select-nobitex .container .post:nth-child(2) img{
+    width: 70px;
+  }
+  
+  #select-nobitex .container .post:last-child img{
+    width: 100px;
+  }
+  
+  /* style section facilities */
+
+  #facilities .container{
+    flex-direction: column;
+  }
+
+  #facilities .container .right-content{
+    width: 100%;
+    order: 1;
+  }
+
+  #facilities .container .left-content .background-content{
+    width: 100%;
+  }
+
+  #facilities .container .left-content .background-content img{
+    width: 300px;
+  }
+
+  /* style section learn-More */
+
+  #learn-More .title{
+    font-size: .7rem;
+    font-weight: 400;
+  }
+
+  #learn-More .container .learn{
+    padding: 1rem;
+  }
+
+  #learn-More .container .learn div{
+    width: 80px;
+    height: 80px;
+  }
+
+  #learn-More .container .learn p{
+    color: var(--primary);
+    font-size: .8rem;
+  }
+
+  /* style section profit */
+  
+  #profit {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #profit .container{
+    flex-direction: column;
+  }
+
+  #profit .container .content{
+    order: 1;
+    width: 100%;
+  }
+
+  #profit .container .content h1{
+    margin-top: 3rem;
+    margin-right: -1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #profit .container .content p{
+    width: 95%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #profit .container .content a{
+    width: 95%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* style section support */
+
+  #support .conteiner .text-support p{
+    font-size: 0.5rem;
+  }
+
+  /* style section footer */
+
+  #footer .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #footer .container .speed-link{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #footer .container .speed-link h3{
+    font-size: 0.9rem;
+  }
+
+  #footer .container .speed-link .list-items{
+    display: none;
+  }
+
+
+  #footer .container .speed-link .arrow{
+    display: flex;
+    cursor: pointer;
+  }
+
+  #footer .download-app .text-app{
+    font-size: 0.7rem;
+    margin-right: -.5rem;
+  }
+
+  #footer .download-app .download-link .image-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #footer .download-app .download-link .image-download .download img{
+    width: 130px;
+  }
+}
+
+@media (max-width: 575px){
+  
+  header .authentication{
+    width: 100px;
+  }
+  
+  header .authentication a:first-child{
+    display: none;
+  }
+
+  /* section selected nobitex */
+
+  #select-nobitex .container{
+    flex-direction: column;
+  }
+  
+  #select-nobitex .container .post p{
+    margin-bottom: 3rem;
+  }
+
+  #statistics .container {
+    flex-direction: column;
+  }
+
+  #statistics .container .active-user{
+    margin-top: 1rem;
+  }
+
+  #statistics .container .transactions-made{
+    margin-top: 2rem;
+  }
+  
+  #statistics .container .transaction-volume{
+    margin-top: 2rem;
+  }
+
+  /* style section learn-More */
+
+  #learn-More .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+/* ********** end responsive webSite  ********** */

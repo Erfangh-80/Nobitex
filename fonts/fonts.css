@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "vazir-Bold";
+  src: url("./fonts/vazir-font/Vazir-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vazir-Medium";
+  src: url("./fonts/vazir-font/Vazir-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vazir";
+  src: url("./fonts/vazir-font/Vazir.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "vazir-FD-Bold";
+  src: url("./fonts/vazir-font/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vazir-FD-Medium";
+  src: url("./fonts/vazir-font/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vazir-FD";
+  src: url("./fonts/vazir-font/Farsi-Digits-Without-Latin/Vazir-FD-WOL.woff") format("woff");
+}

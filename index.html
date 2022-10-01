@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="images/nobitex-logo-1.bc7a625.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  
+  <body>
+
+    <header>
+      <div class="hamburger-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="hamburger-menu">
+        
+        <div class="auth">
+          <i class="fas fa-arrow-left"></i>
+          <a class="login" href="#">ورود</a>
+          <a class="register" href="#">ثبت‌نام</a>
+        </div>
+
+        <div class="items">
+          <ul class="list-item">
+            <li class="cripto"><a class="collapse" href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDE5IDE5Ij48cGF0aCBkPSJNMTYuODg5LDE5SDIuMTExQTIuMTEzLDIuMTEzLDAsMCwxLDAsMTYuODg5VjIuMTEyQTIuMTE0LDIuMTE0LDAsMCwxLDIuMTExLDBIMTYuODg5QTIuMTE0LDIuMTE0LDAsMCwxLDE5LDIuMTEyVjE2Ljg4OUEyLjExMywyLjExMywwLDAsMSwxNi44ODksMTlabS0zLjE2Ni04LjQ0NWExLjA1NywxLjA1NywwLDAsMC0xLjA1NSwxLjA1NXYyLjExMmExLjA1NSwxLjA1NSwwLDEsMCwyLjExMSwwVjExLjYxMUExLjA1NywxLjA1NywwLDAsMCwxMy43MjMsMTAuNTU1Wk05LjUsNC4yMjNBMS4wNTcsMS4wNTcsMCwwLDAsOC40NDUsNS4yNzh2OC40NDVhMS4wNTUsMS4wNTUsMCwxLDAsMi4xMTEsMFY1LjI3OEExLjA1NywxLjA1NywwLDAsMCw5LjUsNC4yMjNaTTUuMjc4LDcuMzg5QTEuMDU3LDEuMDU3LDAsMCwwLDQuMjIzLDguNDQ1djUuMjc4YTEuMDU1LDEuMDU1LDAsMSwwLDIuMTExLDBWOC40NDVBMS4wNTcsMS4wNTcsMCwwLDAsNS4yNzgsNy4zODlaIiBmaWxsPSIjODU4ODhmIi8+PC9zdmc+"></img><span>قیمت لحظه‌ای رمزارزها</span> <i class="fas fa-angle-down"></i> </a></li>
+            <ul class="cripto-menu">
+              <li><a href="#">بیت‌کوین‌</a></li>
+              <li><a href="#">اتریوم</a></li>
+              <li><a href="#">تتر</a></li>
+              <li><a href="#">بیت‌کوین‌‌کش</a></li>
+              <li><a href="#">سایر ارز های دیجیتال</a></li>
+            </ul>
+            <li><a href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDI0IDE1Ij48cGF0aCBkPSJNMjMuNSwxNUgyMC45NWEzLjYyLDMuNjIsMCwwLDAsLjA1LS41NzdWMTIuNjkzYTQuNTQyLDQuNTQyLDAsMCwwLTEuMzgtMy4yNzhDMjEuNjQxLDkuODIxLDI0LDEwLjkyNSwyNCwxMi42OTN2MS43MzFBLjUzNy41MzcsMCwwLDEsMjMuNSwxNVpNMTgsMTVIOGExLjA4NiwxLjA4NiwwLDAsMS0xLTEuMTU0VjEyLjY5M2MwLTIuMjczLDMuOTA2LTMuNDYzLDYtMy40NjNzNiwxLjE5LDYsMy40NjN2MS4xNTRBMS4wODYsMS4wODYsMCwwLDEsMTgsMTVaTTQsMTEuNTM5YTEuMDg3LDEuMDg3LDAsMCwxLTEtMS4xNTVWOC4wNzZIMUExLjA4NiwxLjA4NiwwLDAsMSwwLDYuOTIzLDEuMDg2LDEuMDg2LDAsMCwxLDEsNS43NjlIM1YzLjQ2MUExLjA4NiwxLjA4NiwwLDAsMSw0LDIuMzA4LDEuMDg2LDEuMDg2LDAsMCwxLDUsMy40NjFWNS43NjlIN0ExLjA4NiwxLjA4NiwwLDAsMSw4LDYuOTIzLDEuMDg2LDEuMDg2LDAsMCwxLDcsOC4wNzZINXYyLjMwN0ExLjA4NywxLjA4NywwLDAsMSw0LDExLjUzOVpNMTgsNi45MjNhMi42MSwyLjYxLDAsMCwxLS45MS0uMTYxLDYuNDgzLDYuNDgzLDAsMCwwLC45LTMuMyw2LjMzMyw2LjMzMywwLDAsMC0uOS0zLjNBMi42MDcsMi42MDcsMCwwLDEsMTgsMGEzLjI1NiwzLjI1NiwwLDAsMSwyLjk5LDMuNDYxQTMuMjU2LDMuMjU2LDAsMCwxLDE4LDYuOTIzWm0tNS0uMDExYTMuMjUzLDMuMjUzLDAsMCwxLTMtMy40NUEzLjI1MSwzLjI1MSwwLDAsMSwxMywuMDEzYTMuMjUxLDMuMjUxLDAsMCwxLDMsMy40NDlBMy4yNTIsMy4yNTIsMCwwLDEsMTMsNi45MTJaIiBmaWxsPSIjODU4ODhmIi8+PC9zdmc+" alt=""><span>معرفی به دوستان</span></a></li>
+            <li><a href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDE2IDIwIj48cGF0aCBkPSJNMTg2LDI2NEgxNzMuOTlhMiwyLDAsMCwxLTEuOTktMlYyNDZhMiwyLDAsMCwxLDItMmg3LjE3YTIsMiwwLDAsMSwxLjQyLjU5bDQuODE5LDQuODNhMS45NzQsMS45NzQsMCwwLDEsLjU5LDEuNDFWMjYyQTIsMiwwLDAsMSwxODYsMjY0Wm0tOS02YTEsMSwwLDAsMCwwLDJoNmExLDEsMCwwLDAsMC0yWm0wLTRhMSwxLDAsMCwwLDAsMmg2YTEsMSwwLDAsMCwwLTJabTQtOC41VjI1MGExLDEsMCwwLDAsMSwxaDQuNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzIgLTI0NCkiIGZpbGw9IiM4NTg4OGYiLz48L3N2Zz4=" alt=""><span>راهنمای استفاده</span></a></li>
+            <li><a href="#"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDIxIDIxIj48cGF0aCBkPSJNMTAuNSwyMUExMC41LDEwLjUsMCwxLDEsMjEsMTAuNSwxMC41MTIsMTAuNTEyLDAsMCwxLDEwLjUsMjFaTTkuNDUsMTUuNzVoMHYyLjFoMi4xdi0yLjFaTTEwLjUsNS4yNWEyLjIzNiwyLjIzNiwwLDAsMSwuNi4wODRBMi4wOTQsMi4wOTQsMCwwLDEsMTIuNTU4LDYuOTRhMi4wNzIsMi4wNzIsMCwwLDEtLjU3NywxLjg5bC0xLjMsMS4zMjNBNC4yMTIsNC4yMTIsMCwwLDAsOS40NSwxMy4xMjV2LjUyNGgyLjFhNC44MjQsNC44MjQsMCwwLDEsLjEzNi0xLjIsMy42ODUsMy42ODUsMCwwLDEsMS4wOTItMS43NzRsLjk0NS0uOTY2YTMuNDY2LDMuNDY2LDAsMCwwLC4yLTQuNjIsNC40LDQuNCwwLDAsMC0zLjQ5LTEuOTM1QTMuNjgsMy42OCwwLDAsMCw5Ljg2LDMuMiw0LjIxOSw0LjIxOSwwLDAsMCw2LjQ2OCw2LjE3NC45MjkuOTI5LDAsMCwwLDYuNjE3LDdhLjg4NC44ODQsMCwwLDAsLjcxMi4zNTRoLjMxNUEuOTIyLjkyMiwwLDAsMCw4LjUsNi42NjcsMi4xMTIsMi4xMTIsMCwwLDEsMTAuNSw1LjI1WiIgZmlsbD0iIzg1ODg4ZiIvPjwvc3ZnPg==" alt=""><span>سوالی دارید؟</span></a></li>
+            <li><a href="#"><img src="images/gift-Card.PNG" alt="giftCard" class="hamburger-only mr-16-multi" data-v-8f9a3314="" width="21" height="21"><span>نوبی گیفت</span></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="logo">
+        <img src="images/nobitex-logo-1.bc7a625.webp" alt="logo webSite" />
+        <p>نوبیتکس</p>
+      </div>
+
+      <nav class="">
+        <div class="navbar">
+          <ul class="list-item">
+            <li class="item item1">
+              <a href="#"
+                >قیمت لحظه‌ای رمزارزها
+                <i class="fas fa-angle-down"></i>
+              </a>
+
+              <div class="cripto-menu">
+                <div>
+                  <a href="#">بیت‌کوین‌</a>
+                  <a href="#">اتریوم</a>
+                  <a href="#">تتر</a>
+                  <a href="#">بیت‌کوین‌‌کش</a>
+                  <a href="#">سایر ارز های دیجیتال</a>
+                </div>
+              </div>
+            </li>
+            <li class="item"><a href="#">معرفی به دوستان</a></li>
+            <li class="item"><a href="#">راهنمای استفاده</a></li>
+            <li class="item"><a href="#">سوالی دارید؟</a></li>
+            <li class="item"><a href="#">نوبی گیفت</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="authentication">
+        <a href="#">ورود</a>
+        <a href="#">ثبت‌نام</a>
+      </div>
+
+    </header>
+
+    <section class="header">
+      <div class="heading">
+        <h1> خرید و فروش امن بیت‌کوین و ارزهای دیجیتال </h1>
+        <h3> به بزرگترین بازار ارز دیجیتال ایران بپیوندید </h3>
+
+        <div class="content">
+
+          
+          <div class="sendEmail">
+            <input class="emailInput" type="email" placeholder="ایمیل خود را وارد کنید">
+            <a class="btn-start" href="#">شروع کنید</a>
+          </div>
+          
+          <div class="aparat">
+            <a href="#">نوبیتکس چطور کار میکند؟
+              <img src="images/index.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="market">
+
+      <div class="market-header">
+         <div class="select-market">
+          <span> انتخاب بازار بر اساس </span>
+
+          <div class="filter">
+            <a href="#">تومان IRT</a>
+            <a href="#">تتر USDT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="market-body">
+        <div class="head">
+          <div class="name">
+            <p>نام</p>
+          </div>
+          <div class="last-price">
+            <p>آخرین قیمت</p>
+          </div>
+          <div class="last-change">
+            <p>تغییر  24h </p>
+          </div>
+          <div class="chart">
+            <p>نمودار هفتگی</p>
+          </div>
+          <div></div>
+        </div>
+
+        <div class="curency-market">
+            <div class="name-column">
+              <a href="#">
+                <img src="images/BTC-icon.svg" alt="bitCoin logo">
+              </a>
+
+              <div>
+                <span>BTC</span>
+                <span>بیت‌کوین</span>
+              </div>
+
+            </div>
+
+            <div class="price-column">
+              <span> 1,101,999,800 </span>
+            </div>
+
+            <div class="change-column">
+              <span>  1.77%-  </span>
+            </div>
+
+            <div class="chart-column">
+              <img src="images/btc-chart.png" alt="chart bitCoin">
+            </div>
+
+            <div class="buySell-column">
+              <a href="#" class="btn-buySell"> خرید و فروش </a>
+            </div>
+
+             <div class="more">
+               <span class="more-icon">...</span>
+
+               <div class="dropDown">
+                <div class="about">
+                  <a href="#">درباره بیت‌کوین</a>
+                </div>
+                <div class="buySell">
+                  <a href="#">خرید و فروش</a>
+                </div>
+               </div> 
+
+              </div>
+
+        </div>     
+        
+        <div class="curency-market">
+          <div class="name-column">
+            <a href="#">
+              <img src="images/ETH-icon.svg" alt="ETH logo">
+            </a>
+
+            <div>
+              <span>ETH</span>
+              <span>اتریوم</span>
+            </div>
+
+          </div>
+
+          <div class="price-column">
+            <span> 82,300,000 </span>
+          </div>
+
+          <div class="change-column">
+            <span>  2.83%-  </span>
+          </div>
+
+          <div class="chart-column">
+            <img src="images/eth-chart.png" alt="chart ETH">
+          </div>
+
+          <div class="buySell-column">
+            <a href="#" class="btn-buySell"> خرید و فروش </a>
+          </div>
+
+          <div class="more">
+            <span class="more-icon">...</span>
+
+            <div class="dropDown">
+             <div class="about">
+               <a href="#">درباره بیت‌کوین</a>
+             </div>
+             <div class="buySell">
+               <a href="#">خرید و فروش</a>
+             </div>
+            </div> 
+
+           </div>
+
+        </div>
+
+        <div class="curency-market">
+          <div class="name-column">
+            <a href="#">
+              <img src="images/SHIB-icon.svg" alt="SHIBA logo">
+            </a>
+
+            <div>
+              <span>SHIB</span>
+              <span>هزار شیبا</span>
+            </div>
+
+          </div>
+
+          <div class="price-column">
+            <span> 679 </span>
+          </div>
+
+          <div class="change-column">
+            <span>  5.56%-  </span>
+          </div>
+
+          <div class="chart-column">
+            <img src="images/shib-chart.png" alt="chart Shiba">
+          </div>
+
+          <div class="buySell-column">
+            <a href="#" class="btn-buySell"> خرید و فروش </a>
+          </div>
+
+          <div class="more">
+            <span class="more-icon">...</span>
+
+            <div class="dropDown">
+             <div class="about">
+               <a href="#">درباره بیت‌کوین</a>
+             </div>
+             <div class="buySell">
+               <a href="#">خرید و فروش</a>
+             </div>
+            </div> 
+
+           </div>
+          
+        </div>
+
+        <div class="curency-market">
+          <div class="name-column">
+            <a href="#">
+              <img src="images/ADA-icon.svg" alt="ADA logo">
+            </a>
+
+            <div>
+              <span>ADA</span>
+              <span>کاردانو</span>
+            </div>
+
+          </div>
+
+          <div class="price-column">
+            <span> 24,902 </span>
+          </div>
+
+          <div class="change-column">
+            <span>  5.82%-  </span>
+          </div>
+
+          <div class="chart-column">
+            <img src="images/ada-chart.png" alt="chart ADA">
+          </div>
+
+          <div class="buySell-column">
+            <a href="#" class="btn-buySell"> خرید و فروش </a>
+          </div>
+
+          <div class="more">
+            <span class="more-icon">...</span>
+
+            <div class="dropDown">
+             <div class="about">
+               <a href="#">درباره بیت‌کوین</a>
+             </div>
+             <div class="buySell">
+               <a href="#">خرید و فروش</a>
+             </div>
+            </div> 
+
+           </div>
+          
+        </div>
+
+        <div class="curency-market">
+          <div class="name-column">
+            <a href="#">
+              <img src="images/TRX-icon.svg" alt="TRX logo">
+            </a>
+
+            <div>
+              <span>TRX</span>
+              <span>ترون</span>
+            </div>
+
+          </div>
+
+          <div class="price-column">
+            <span> 1,680 </span>
+          </div>
+
+          <div class="change-column">
+            <span>  2.89%-  </span>
+          </div>
+
+          <div class="chart-column">
+            <img src="images/trx-chart.png" alt="chart TRX">
+          </div>
+
+          <div class="buySell-column">
+            <a href="#" class="btn-buySell"> خرید و فروش </a>
+          </div>
+
+          <div class="more">
+            <span class="more-icon">...</span>
+
+            <div class="dropDown">
+             <div class="about">
+               <a href="#">درباره بیت‌کوین</a>
+             </div>
+             <div class="buySell">
+               <a href="#">خرید و فروش</a>
+             </div>
+            </div> 
+
+           </div>
+
+        </div>
+
+        <div class="curency-market">
+          <div class="name-column">
+            <a href="#">
+              <img src="images/DOGE-icon.svg" alt="DOGECoin logo">
+            </a>
+
+            <div>
+              <span>DOGE</span>
+              <span>دوج‌کوین</span>
+            </div>
+
+          </div>
+
+          <div class="price-column">
+            <span> 3,830 </span>
+          </div>
+
+          <div class="change-column">
+            <span>  4.63%-  </span>
+          </div>
+
+          <div class="chart-column">
+            <img src="images/doge-chart.png" alt="chart DOGECoin">
+          </div>
+
+          <div class="buySell-column">
+            <a href="#" class="btn-buySell"> خرید و فروش </a>
+          </div>
+
+          <div class="more">
+            <span class="more-icon">...</span>
+
+            <div class="dropDown">
+             <div class="about">
+               <a href="#">درباره بیت‌کوین</a>
+             </div>
+             <div class="buySell">
+               <a href="#">خرید و فروش</a>
+             </div>
+            </div> 
+
+           </div>
+          
+        </div>
+
+        <div class="all-cripto">
+          <div>
+            <a href="#">
+              <span>نمایش همه بازارها</span>
+              <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="slider"> 
+      <div class="cards">
+        <div class="card card1">
+          <img src="images/blog-1.webp" alt="blog 1">
+        </div>
+        <div class="card card2">
+          <img src="images/blog-2.webp" alt="blog 2">
+        </div>
+        <div class="card card3">
+          <img src="images/blog-3.webp" alt="blog 3">
+        </div>
+        <div class="card card4">
+          <img src="images/blog-4.webp" alt="blog 4">
+        </div>
+      </div>
+      <div class="arrow">
+
+        <div class="arrow-right">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+
+        <div class="arrow-left">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="select-nobitex">
+
+      <div class="title">
+        <h1>چرا نوبیتکس را انتخاب کنیم؟</h1>
+      </div>
+
+      <div class="container">
+
+        <div class="post">
+          <img src="images/post-3.webp" alt="">
+          <h4> ساده و کاربردی </h4>
+          <p>محیط ساده و کاربردی نوبیتکس، معامله ارزدیجیتال را برای شما لذت بخش خواهد کرد.</p>
+        </div>
+
+        <div class="post">
+          <img src="images/post-2.webp" alt="">
+          <h4> خرید و فروش امن </h4>
+          <p>اولویت نوبیتکس امنیت است. با خیالی آسوده و بدون نگرانی خرید و فروش کنید.</p>
+        </div>
+
+        <div class="post">
+          <img src="images/post-1.webp" alt="">
+          <h4> پیشرو و سریع </h4>
+          <p>تنوع رمزارزها و سرعت معاملات، نوبیتکس را جزو بهترین بازارهای آنلاین قرار داده است.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="facilities">
+      <div class="title">
+        <h1>بهترین امکانات خرید و فروش ارزهای دیجیتال</h1>
+      </div>
+
+      <div class="container">
+
+        <div class="right-content">
+
+          <div class="content">
+            <div class="image-content">
+              <img src="images/managment-inventory.webp" alt="">
+            </div>
+
+            <div class="description">
+              <h4> مدیریت موجودی کیف پول </h3>
+              <p> رمزارزهای دیجیتال محبوب را خرید و فروش کنید و در یکجا وضعیت موجودی خود را دنبال کنید </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="image-content">
+              <img src="images/card-pay.webp" alt="">
+            </div>
+
+            <div class="description">
+              <h4>    پرداخت با کارت‌های شتاب   </h3>
+              <p>   معامله انواع رمزارز با تومان از طریق واریز و برداشت با کارت‌های بانکی عضو شتاب</p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="image-content">
+              <img src="images/Money-Security.webp" alt="">
+            </div>
+
+            <div class="description">
+              <h4>  کیف پول امن  </h3>
+              <p>  رمز اختصاصی کیف پول شما به صورت آفلاین نگهداری می شود و در برابر هک ایمن خواهد بود  </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="image-content">
+              <img src="images/Wage.webp" alt="">
+            </div>
+
+            <div class="description">
+              <h4>  کارمزد رقابتی  </h3>
+              <p>  کارمزد خرید و فروش در نوبیتکس بسیار کم است و با بالاتر رفتن حجم معاملات کاهش می‌یابد  </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="left-content">
+          <div class="background-content">
+            <img src="images/app-screenshot.webp" alt="">
+          </div>
+        </div>  
+
+      </div>
+
+    </section>
+
+    <section id="statistics">
+
+      <div class="container">
+        <div class="active-user">
+          <h4> +600 <span>K</span></h4>
+          <p>کاربر فعال</p>
+        </div>
+        <div class="transactions-made">
+          <h4> +5.5 <span>M</span></h4>
+          <p>معاملات انجام شده</p>
+        </div>
+        <div class="transaction-volume">
+          <h4> +200 <span>B</span></h4>
+          <p>حجم معاملات</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn-More">
+
+      <div class="title">
+        <h1>همراه با نوبیتکس بیشتر یاد بگیرید</h1>
+      </div>
+
+      <div class="container">
+
+        <div class="learn help-boy">
+          <div>
+            <img src="images/pay-help.webp" alt="">
+          </div>
+          <p>راهنمای خرید ارز دیجیتال</p>
+        </div>
+
+        <div class="learn learn-videos">
+          <div>
+            <img src="images/learning-videos.webp" alt="">
+          </div>
+          <p>ویدئوهای آموزشی</p>
+        </div>
+
+        <div class="learn nobitex-blog">
+          <div>
+            <img src="images/nobitex-blog.webp" alt="">
+          </div>
+          <p>نوبیتکس باگ</p>
+        </div>
+
+        <div class="learn question">
+          <div>
+            <img src="images/Question.webp" alt="">
+          </div>
+          <p>سوالات متداول</p>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="profit">
+      <div class="container">
+
+        <div class="content">
+          <h1> در سود نوبیتکس سهیم شوید </h1>
+          <p> با دعوت از دوستانتان با لینک اختصاصی خود، هر بار که معامله می‌کنند برای همیشه تا 30% از کارمزد معاملاتشان از طرف نوبیتکس به شما تعلق می‌گیرد </p>
+          <a href="#">بیشتر بدانید</a>
+        </div>
+
+        <div class="image-content">
+          <img src="images/profit-img.webp" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="container">
+
+        <div class="text-support">
+          <p> هفت روز هفته، در 24 ساعت شبانه‌روز پاسخگوی شما هستیم </p>
+        </div>
+
+        <div class="contact-nobitext">
+          <p> support@nobitex.ir </p>
+          <a href="#" class="first">تماس با پشتیبانی</a>
+          <a href="#" class="last">سوالات متداول</a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+
+        <div class="logo">
+          <img src="images/nobitex-logo-1.bc7a625.webp" alt="logo">
+          <p>نوبیتکس</p>
+        </div>
+
+        <div class="speed-link">
+          <div>
+            <h3> درباره نوبیتکس </h3>
+            <ul class="list-items">
+              <li class="item"><a href="#">درباره ما</a></li>
+              <li class="item"><a href="#">نوبیتکس بلاگ</a></li>
+              <li class="item"><a href="#">امنیت کیف پول</a></li>
+              <li class="item"><a href="#">قوانین و مقررات</a></li>
+              <li class="item"><a href="#">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div id="arrow" class="arrow">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+
+        <div class="speed-link">
+          <div>
+            <h3> امکانات و خدمات </h3>
+            <ul class="list-items">
+              <li class="item"><a href="">بازار آزمایشی نوبیتکس</a></li>
+              <li class="item"><a href="">معرفی به دوستان</a></li>
+              <li class="item"><a href="">اپیکیشن اندروید</a></li>
+              <li class="item"><a href="">مستندات Api</a></li>
+              <li class="item"><a href="">پزارش تغییرات</a></li>
+            </ul>
+          </div>
+          <div id="arrow" class="arrow">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="speed-link">
+          <div>
+            <h3> راهنما و پشتیبانی </h3>
+            <ul class="list-items">
+              <li class="item"><a href="">سوالات متداول</a></li>
+              <li class="item"><a href="">احراز هویت و سطوح کاربری</a></li>
+              <li class="item"><a href="">قیمت ها و کارمزد ها</a></li>
+              <li class="item"><a href="">راهنمای امنیت حساب کاربری</a></li>
+            </ul>
+          </div>
+          <div class="arrow">
+            <i class="fas fa-angle-down"></i>
+          </div> 
+        </div>
+
+      </div>
+
+      <div class="download-app">
+        <div class="text-app">
+          <p> با اپلیکیشن موبایل نوبیتکس از هیچ معامله‌ای عقب نمی‌مونی! </p>
+        </div>
+
+        <div class="download-link">
+
+          <div class="image-download">
+            <a href="#" class="download direct">
+              <img src="images/download.svg" alt="">
+            </a>
+
+            <a href="#" class="download">
+              <img class="bazar" src="images/download-from-bazar.svg" alt="">
+            </a>
+
+            <a href="#" class="download">
+              <img class="myket" src="images/download-from-myket.svg" alt="">
+            </a>
+
+            <a href="#" class="download market">
+              <img src="images/download-simulator-market.svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="follow">
+
+        <div class="follower">
+          <div class="twitter">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="telegram">
+            <i class="fab fa-telegram-plane"></i>
+          </div>
+          <div class="instagram">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="copy-right">
+ 
+          <div class="btn-language">
+
+
+            <div class="language">
+              <div class="logo">
+                <img src="images/nobitex-logo-1.bc7a625.webp" alt="logo">
+                <p>نوبیتکس</p>
+              </div>
+
+              <button><i class="far fa-globe"></i> English </button>
+            </div>
+            
+            <div class="copy-text">
+              <span>NOBITEX 2016-2022 , v3.14.20 <span class="text">- 382371a1</span>  &copy </span>
+            </div>
+          </div>
+
+          
+  
+      </div>
+
+      
+      </div>
+
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
